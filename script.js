@@ -1,6 +1,6 @@
 const tarefa = document.querySelector("#tarefa")
 const btn = document.querySelector("#btn")
-const lista = querySelector.("#lista")
+const lista = querySelector.querySelector("#lista")
 
 btn.addEventListener("click", function(){
     if(tarefa.value == ""){
@@ -18,7 +18,7 @@ btn.addEventListener("click", function(){
     for(let i=0; i<close.length; i++){
         close[i].addEventListener("click", function(){
             close[i].parentElement.remove();
-        }):
+        });
     }
 
     lista.addEventListener("click", function(e){
